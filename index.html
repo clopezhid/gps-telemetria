@@ -3,56 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GPS Tracker & Telemetría</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <!-- Header -->
+    <header class="bg-dark text-white text-center py-5">
         <h1>Soluciones Avanzadas en GPS & Telemetría Vehicular</h1>
-        <nav>
-            <ul>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#about">Nosotros</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
+        <p>Monitorea, protege y optimiza tu flota con tecnología de punta.</p>
+        <a href="#contact" class="btn btn-primary mt-3">Contáctanos</a>
     </header>
 
-    <section id="services">
-        <h2>Nuestros Servicios</h2>
-        <p>Ofrecemos rastreo vehicular y telemetría avanzada para mejorar la seguridad y eficiencia de tu flota.</p>
-        <ul>
-            <li>Rastreo GPS en tiempo real</li>
-            <li>Monitoreo de vehículos y flotas</li>
-            <li>Equipamiento automotriz personalizado</li>
-            <li>Telemetría avanzada para maximizar el rendimiento</li>
-        </ul>
+    <!-- Services Section -->
+    <section id="services" class="py-5 text-center">
+        <div class="container">
+            <h2 class="mb-4">Nuestros Servicios</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Rastreo GPS en tiempo real</h4>
+                    <p>Visualiza la ubicación exacta de tus vehículos en todo momento.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Monitoreo de flotas</h4>
+                    <p>Gestiona tu flota con reportes detallados y alertas personalizadas.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Telemetría avanzada</h4>
+                    <p>Obtén datos en tiempo real para optimizar el rendimiento de tus vehículos.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="about">
-        <h2>Sobre Nosotros</h2>
-        <p>Somos una empresa especializada en soluciones tecnológicas para el control y monitoreo de vehículos, brindando equipamiento automotriz de alta calidad.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contáctanos</h2>
-        <form>
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Correo:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Enviar</button>
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Contáctanos</h2>
+        <form id="contactForm" class="w-75 mx-auto">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Apellido</label>
+                <input type="text" class="form-control" id="lastname" name="lastname" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Celular</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Enviar</button>
         </form>
-    </section>
+    </div>
+	</section>
 
-    <footer>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 GPS Tracker & Telemetría. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
