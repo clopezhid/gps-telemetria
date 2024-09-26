@@ -16,3 +16,26 @@ footer {
     background-color: #333;
     color: #fff;
 }
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('path/to/your/background.jpg') no-repeat center center/cover;
+    color: #fff;
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+section {
+    padding: 60px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+}
